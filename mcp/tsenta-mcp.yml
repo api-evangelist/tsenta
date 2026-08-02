@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+status: published
+source: https://tsenta.com/mcp
+server:
+  name: tsenta
+  transport: http
+  url: https://api.autojobs.me/api/v1/mcp
+  auth:
+    type: oauth2
+    flow: authorization_code
+    pkce: S256
+    dynamic_client_registration: true
+    authorization_endpoint: https://api.autojobs.me/oauth/authorize
+    token_endpoint: https://api.autojobs.me/oauth/token
+    note: >-
+      OAuth-based; Tsenta never sees a password. Clients receive a short-lived
+      token that refreshes automatically. Sign-in is via Google on the Tsenta
+      approval screen.
+clients:
+  - name: Claude Code
+    install: claude mcp add --transport http tsenta https://api.autojobs.me/api/v1/mcp
+  - name: Claude Desktop & Web
+  - name: Cursor
+  - name: Codex CLI
+# The live MCP endpoint is OAuth-protected (HTTP 401 without a token), so the
+# exact tool list is not publicly enumerable. The documented capabilities the
+# server exposes to a connected AI client (per https://tsenta.com/mcp) are:
+capabilities:
+  - name: surface_matching_roles
+    description: Surface job roles that fit the user's resume/profile.
+  - name: tailor_resume
+    description: Tailor the user's resume (and cover letter) per role.
+  - name: submit_application
+    description: Submit job applications on the user's behalf across supported ATSes.
+tools: []   # not publicly enumerable — endpoint requires OAuth

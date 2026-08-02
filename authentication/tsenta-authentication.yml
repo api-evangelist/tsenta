@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://api.autojobs.me/.well-known/oauth-authorization-server
+docs: https://tsenta.com/mcp
+summary:
+  types: [oauth2]
+  oauth2_flows: [authorizationCode]
+  pkce: [S256]
+  public_client: true            # token_endpoint_auth_methods_supported = ["none"]
+  dynamic_client_registration: true
+schemes:
+  - name: OAuth2
+    type: oauth2
+    issuer: https://api.autojobs.me
+    flows:
+      - flow: authorizationCode
+        authorizationUrl: https://api.autojobs.me/oauth/authorize
+        tokenUrl: https://api.autojobs.me/oauth/token
+        registrationUrl: https://api.autojobs.me/oauth/register   # RFC 7591 dynamic client registration
+        revocationUrl: https://api.autojobs.me/oauth/revoke        # RFC 7009 token revocation
+        response_types: [code]
+        grant_types: [authorization_code, refresh_token]
+        code_challenge_methods: [S256]
+        token_endpoint_auth_methods: [none]
+    sources: [well-known/tsenta-oauth-authorization-server.json]
+notes: >-
+  Tsenta's API (api.autojobs.me) uses OAuth 2.0 / 2.1-style authorization-code
+  flow with PKCE (S256) for public clients and RFC 7591 dynamic client
+  registration — the modern pattern for authorizing AI agents / MCP clients.
+  No scopes are advertised in the authorization-server metadata. Sign-in is
+  federated via Google on the Tsenta approval screen; issued tokens are
+  short-lived and auto-refresh.

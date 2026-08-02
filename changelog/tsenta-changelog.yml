@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://tsenta.com/changelog
+scheme: dated              # dated entries, not semantic versions
+current_version: null
+entries:
+  - date: '2026-07-01'
+    type: feature
+    title: Review Before Submit
+    breaking: false
+    highlights:
+      - >-
+        Tsenta now pauses right before the final submit and shows everything it
+        filled in (answers, tailored resume, cover letter) for review/edit
+        before approval.
+      - >-
+        Live across common application systems including Greenhouse, Workday,
+        Ashby, Lever, Oracle, and SmartRecruiters, with more on the way.
+      - Auto-approve (hands-free applying) still works as before.
+  - date: '2026-06-30'
+    type: announcement
+    title: Introducing the Changelog
+    breaking: false
+    highlights:
+      - >-
+        Tsenta launched a public changelog to surface notable updates in one
+        place: new features, new ATS support, and reliability fixes.

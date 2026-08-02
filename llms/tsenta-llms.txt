@@ -1,0 +1,59 @@
+# Tsenta
+
+> Tsenta is a Y Combinator-backed transparent agent that watches 50,000+ company career pages, tailors your résumé per role, and submits applications across 19 ATSes (Workday, Greenhouse, Lever, Ashby, Rippling, iCIMS, BambooHR, Workable, JazzHR, Jobvite, BreezyHR, Oracle Cloud, SmartRecruiters, Paylocity, UltiPro, ADP, Dover, Gem, Zoho Recruit). Available on web, native iOS and Android apps, desktop, iMessage, WhatsApp, Chrome extension, and as an MCP server / CLI for any AI agent.
+
+Every change Tsenta makes is shown to you before it goes out. You can watch each application happen, or run headless and check the recording later.
+
+## Who Tsenta is for
+
+Tsenta is built for active job seekers — software engineers, product managers, designers, and other professionals — running a high-volume search across multiple companies. It's especially useful for candidates who want to get ahead of the applicant flood that hits a posting 48 hours after it goes live, and for those applying to companies that use complex ATSes like Workday where manual form-filling takes 20–45 minutes per application.
+
+## Product
+
+- [Home](https://tsenta.com/): Landing page with the full find / prep / apply / track pipeline and an interactive dashboard demo
+- [Mobile apps](https://tsenta.com/mobile): Download Tsenta for iPhone, iPad, or Android
+- [Messaging](https://tsenta.com/messaging): Apply to jobs by texting back; Tsenta surfaces a match, you reply "apply", it submits
+- [Job Board](https://tsenta.com/jobs): Browse curated openings from supported ATSes
+
+## How it works (four stages)
+
+- [Find](https://tsenta.com/#workflow): Tsenta watches 50,000+ company career pages. The moment a role drops that fits your résumé, you know, and you are already in the top 100 applicants. Roles surface hours before LinkedIn or Indeed index them.
+- [Prep](https://tsenta.com/#workflow): Per-role résumé and cover letter, generated from the actual job description, with keyword alignment, ATS-safe formatting, and every change shown to you before send.
+- [Apply](https://tsenta.com/#workflow): Tsenta opens the form. Tsenta hits submit. Workday, Greenhouse, Lever, Ashby and 15 more ATSes; login, every field, open-ended questions in your voice, document uploads. Watch it happen or run headless.
+- [Track](https://tsenta.com/#workflow): Recruiter emails land back on the right application. Status moves on its own; your inbox stops being a graveyard and starts being a pipeline.
+
+## Platforms
+
+- [Web](https://tsenta.com/#platforms): Discovery feed, application queue, recruiter inbox; every surface of Tsenta in one place, on any browser.
+- [iOS](https://apps.apple.com/us/app/tsenta/id6760728258): Native Tsenta app for iPhone and iPad.
+- [Android](https://play.google.com/store/apps/details?id=com.tsenta.tsenta&hl=en_US): Native Tsenta app from Google Play.
+- [iMessage / WhatsApp](https://tsenta.com/messaging): Tsenta texts you when a match drops; reply yes and the application happens in the background.
+- [Chrome extension](https://tsenta.com/#platforms): Apply from any job page on the web.
+- [MCP server / CLI](https://tsenta.com/#platforms): A Tsenta MCP server and CLI for Claude Code, OpenClaw, and any agent that speaks tools.
+
+## Comparisons
+
+How Tsenta compares to other auto-apply and job-search tools, with honest pricing and feature breakdowns.
+
+- [All comparisons](https://tsenta.com/blog): Tsenta benchmarked against 20+ auto-apply tools — where it wins and where it loses
+- [Tsenta vs every other auto-apply tool](https://tsenta.com/blog/tsenta-vs-competitors): The master roundup — Tsenta vs LazyApply, Simplify, Jobright, Huntr, Teal, JobCopilot, Massive, and more
+- [Tsenta vs Simplify](https://tsenta.com/blog/tsenta-vs-simplify): Autofill Chrome extension vs an agent that completes and submits the whole application
+- [Tsenta vs Jobright](https://tsenta.com/blog/tsenta-vs-jobright): AI matching plus autofill vs an agent that logs in, navigates the flow, and answers screeners
+- [Tsenta vs Sorce.jobs](https://tsenta.com/blog/tsenta-vs-sorce-jobs): A single iOS surface vs Tsenta's eight product surfaces
+- [Tsenta vs AIApply](https://tsenta.com/blog/tsenta-vs-aiapply): Per-feature add-on pricing vs bundled résumé and cover-letter tailoring
+- [Tsenta vs Massive](https://tsenta.com/blog/tsenta-vs-massive): Applications per dollar and onboarding length, compared
+
+## Careers
+
+- [Open roles](https://www.ycombinator.com/companies/tsenta/jobs): View open positions on Y Combinator
+
+## Support
+
+- [FAQ](https://tsenta.com/#faq): How Tsenta works, supported ATSes, getting started, transparency
+- [Contact](mailto:founders@tsenta.com): founders@tsenta.com
+- [LinkedIn](https://www.linkedin.com/company/tsenta/)
+
+## Optional
+
+- [Y Combinator Profile](https://www.ycombinator.com/companies/tsenta)
+- [Full Content](https://tsenta.com/llms-full.txt): Complete site content in a single markdown file for LLM consumption

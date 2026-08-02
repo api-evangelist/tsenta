@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://tsenta.com/.well-known/ and https://api.autojobs.me/.well-known/
+hosts:
+  - host: https://tsenta.com
+    documents:
+      - path: /.well-known/security.txt          # RFC 9116
+        status: 200
+        file: tsenta-security.txt
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://api.autojobs.me
+    documents:
+      - path: /.well-known/oauth-authorization-server   # RFC 8414 authorization-server metadata
+        status: 200
+        file: tsenta-oauth-authorization-server.json
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+notes: >-
+  api.autojobs.me is the Tsenta API backend (the MCP endpoint and OAuth
+  authorization server live here). It publishes RFC 8414 OAuth 2.0
+  authorization-server metadata advertising authorization_code + refresh_token
+  grants, PKCE (S256), and dynamic client registration (RFC 7591). The public
+  marketing host tsenta.com publishes an RFC 9116 security.txt.

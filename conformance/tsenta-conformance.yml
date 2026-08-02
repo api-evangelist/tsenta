@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: >-
+  https://api.autojobs.me/.well-known/oauth-authorization-server ,
+  https://tsenta.com/.well-known/security.txt
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: >-
+      Published OAuth 2.0 authorization server (authorization_code + refresh_token
+      grants) at api.autojobs.me.
+  - id: rfc8414-oauth-as-metadata
+    conforms: true
+    evidence: /.well-known/oauth-authorization-server returns 200 with issuer/endpoints.
+  - id: rfc7591-dynamic-client-registration
+    conforms: true
+    evidence: registration_endpoint advertised (https://api.autojobs.me/oauth/register).
+  - id: rfc7636-pkce
+    conforms: true
+    evidence: code_challenge_methods_supported = ["S256"].
+  - id: rfc7009-token-revocation
+    conforms: true
+    evidence: revocation_endpoint advertised (https://api.autojobs.me/oauth/revoke).
+  - id: rfc9116-security-txt
+    conforms: true
+    evidence: /.well-known/security.txt present with Contact + Expires.
+  - id: mcp-server
+    conforms: true
+    evidence: Hosted Model Context Protocol server at api.autojobs.me/api/v1/mcp (HTTP transport, OAuth).
+  - id: openid-connect
+    conforms: false
+    evidence: No /.well-known/openid-configuration (OAuth 2.0 only, not OIDC discovery).
