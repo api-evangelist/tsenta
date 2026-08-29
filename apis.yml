@@ -12,6 +12,17 @@ description: >-
   WhatsApp, a Chrome extension, and as a hosted Model Context Protocol (MCP)
   server / CLI at api.autojobs.me for Claude, Cursor, Codex and any tool-using
   AI agent, authorized over OAuth 2.0 with PKCE and dynamic client registration.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
